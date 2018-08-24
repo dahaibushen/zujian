@@ -32,8 +32,8 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(switchNext)];
     
     [self addImageView];
-    
     [self addCardSwitch];
+    //提交测试代码
 }
 
 - (void)addImageView {
