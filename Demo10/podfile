@@ -1,0 +1,17 @@
+platform :ios,'8.0'
+
+target 'Demo10' do
+
+pod 'AFNetworking','~> 3.0.4'
+
+pod 'JSONModel','~> 1.8.0'
+
+pod 'WechatOpenSDK'
+
+pod 'SDCycleScrollView' , '1.65'
+
+pod 'AMap2DMap', '5.6.1'
+pod 'AMapLocation', '2.6.1'
+pod 'AMapSearch', '6.6.0'
+
+end
