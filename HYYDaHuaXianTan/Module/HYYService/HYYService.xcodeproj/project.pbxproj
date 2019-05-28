@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A0087CE9B60FAC2055AF6C /* libPods-HYYService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE668AE1D2D68A1E17E2B14 /* libPods-HYYService.a */; };
 		85196C09229D10AF003E90D9 /* HYYService.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196C08229D10AF003E90D9 /* HYYService.m */; };
 		85196C0A229D10AF003E90D9 /* HYYService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 85196C07229D10AF003E90D9 /* HYYService.h */; };
 /* End PBXBuildFile section */
@@ -25,9 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3EE668AE1D2D68A1E17E2B14 /* libPods-HYYService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYYService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9CF54D4B32AB11F8BCBE20 /* Pods-HYYService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYService.debug.xcconfig"; path = "Target Support Files/Pods-HYYService/Pods-HYYService.debug.xcconfig"; sourceTree = "<group>"; };
 		85196C04229D10AF003E90D9 /* libHYYService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHYYService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85196C07229D10AF003E90D9 /* HYYService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYYService.h; sourceTree = "<group>"; };
 		85196C08229D10AF003E90D9 /* HYYService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYYService.m; sourceTree = "<group>"; };
+		D1187721EA76B359E70695D3 /* Pods-HYYService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYService.release.xcconfig"; path = "Target Support Files/Pods-HYYService/Pods-HYYService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A0087CE9B60FAC2055AF6C /* libPods-HYYService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043AF0C18AD6348B00D07BF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EE668AE1D2D68A1E17E2B14 /* libPods-HYYService.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0BA19E1CFA17FD44D076F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C9CF54D4B32AB11F8BCBE20 /* Pods-HYYService.debug.xcconfig */,
+				D1187721EA76B359E70695D3 /* Pods-HYYService.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		85196BFB229D10AF003E90D9 = {
 			isa = PBXGroup;
 			children = (
 				85196C06229D10AF003E90D9 /* HYYService */,
 				85196C05229D10AF003E90D9 /* Products */,
+				7E0BA19E1CFA17FD44D076F8 /* Pods */,
+				043AF0C18AD6348B00D07BF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85196C0D229D10AF003E90D9 /* Build configuration list for PBXNativeTarget "HYYService" */;
 			buildPhases = (
+				74DC87F7C110070922E0D03A /* [CP] Check Pods Manifest.lock */,
 				85196C00229D10AF003E90D9 /* Sources */,
 				85196C01229D10AF003E90D9 /* Frameworks */,
 				85196C02229D10AF003E90D9 /* CopyFiles */,
@@ -116,6 +142,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74DC87F7C110070922E0D03A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HYYService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85196C00229D10AF003E90D9 /* Sources */ = {
@@ -243,6 +294,7 @@
 		};
 		85196C0E229D10AF003E90D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9CF54D4B32AB11F8BCBE20 /* Pods-HYYService.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -254,6 +306,7 @@
 		};
 		85196C0F229D10AF003E90D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1187721EA76B359E70695D3 /* Pods-HYYService.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";

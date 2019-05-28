@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface HYYService : NSObject
-
++(instancetype)serviceShare;
+-(void)postRequestData;
 @end
