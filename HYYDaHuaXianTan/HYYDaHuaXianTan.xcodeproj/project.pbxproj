@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13838EA77DD49413F6101825 /* libPods-HYYDaHuaXianTan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC4F033C374C08A70289EB88 /* libPods-HYYDaHuaXianTan.a */; };
+		69F809D6A694D6D15CEF1B1A /* libPods-HYYDaHuaXianTan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D564EFAABC0F2861A6C20 /* libPods-HYYDaHuaXianTan.a */; };
 		85196BC4229D0B60003E90D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196BC3229D0B60003E90D9 /* AppDelegate.m */; };
 		85196BC7229D0B60003E90D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196BC6229D0B60003E90D9 /* ViewController.m */; };
 		85196BCA229D0B60003E90D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85196BC8229D0B60003E90D9 /* Main.storyboard */; };
@@ -28,7 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6078BC421ADAF5AF729526E5 /* Pods-HYYDaHuaXianTan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYDaHuaXianTan.release.xcconfig"; path = "Target Support Files/Pods-HYYDaHuaXianTan/Pods-HYYDaHuaXianTan.release.xcconfig"; sourceTree = "<group>"; };
+		0DE3C9A085023E08FC8E7AA8 /* Pods-HYYDaHuaXianTan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYDaHuaXianTan.release.xcconfig"; path = "Target Support Files/Pods-HYYDaHuaXianTan/Pods-HYYDaHuaXianTan.release.xcconfig"; sourceTree = "<group>"; };
+		338D564EFAABC0F2861A6C20 /* libPods-HYYDaHuaXianTan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYYDaHuaXianTan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85196BBF229D0B60003E90D9 /* HYYDaHuaXianTan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYYDaHuaXianTan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85196BC2229D0B60003E90D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		85196BC3229D0B60003E90D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,8 +43,7 @@
 		85196BD7229D0B62003E90D9 /* HYYDaHuaXianTanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYYDaHuaXianTanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85196BDB229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYYDaHuaXianTanUITests.m; sourceTree = "<group>"; };
 		85196BDD229D0B62003E90D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD29FD70D6D5AC879341C0C8 /* Pods-HYYDaHuaXianTan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYDaHuaXianTan.debug.xcconfig"; path = "Target Support Files/Pods-HYYDaHuaXianTan/Pods-HYYDaHuaXianTan.debug.xcconfig"; sourceTree = "<group>"; };
-		DC4F033C374C08A70289EB88 /* libPods-HYYDaHuaXianTan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYYDaHuaXianTan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3C319201419ACEC1BFC2BB /* Pods-HYYDaHuaXianTan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYDaHuaXianTan.debug.xcconfig"; path = "Target Support Files/Pods-HYYDaHuaXianTan/Pods-HYYDaHuaXianTan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13838EA77DD49413F6101825 /* libPods-HYYDaHuaXianTan.a in Frameworks */,
+				69F809D6A694D6D15CEF1B1A /* libPods-HYYDaHuaXianTan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +65,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6F29F15721F2B636F8489532 /* Frameworks */ = {
+		5B506E11BCDF548AB0B04882 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC4F033C374C08A70289EB88 /* libPods-HYYDaHuaXianTan.a */,
+				338D564EFAABC0F2861A6C20 /* libPods-HYYDaHuaXianTan.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,8 +79,8 @@
 				85196BC1229D0B60003E90D9 /* HYYDaHuaXianTan */,
 				85196BDA229D0B62003E90D9 /* HYYDaHuaXianTanUITests */,
 				85196BC0229D0B60003E90D9 /* Products */,
-				DDEBF4059EBB8C9C71275E4F /* Pods */,
-				6F29F15721F2B636F8489532 /* Frameworks */,
+				8A685A3F83403D12AEF0341D /* Pods */,
+				5B506E11BCDF548AB0B04882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,11 +118,11 @@
 			path = HYYDaHuaXianTanUITests;
 			sourceTree = "<group>";
 		};
-		DDEBF4059EBB8C9C71275E4F /* Pods */ = {
+		8A685A3F83403D12AEF0341D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CD29FD70D6D5AC879341C0C8 /* Pods-HYYDaHuaXianTan.debug.xcconfig */,
-				6078BC421ADAF5AF729526E5 /* Pods-HYYDaHuaXianTan.release.xcconfig */,
+				FA3C319201419ACEC1BFC2BB /* Pods-HYYDaHuaXianTan.debug.xcconfig */,
+				0DE3C9A085023E08FC8E7AA8 /* Pods-HYYDaHuaXianTan.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -135,7 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85196BE0229D0B62003E90D9 /* Build configuration list for PBXNativeTarget "HYYDaHuaXianTan" */;
 			buildPhases = (
-				5D636CD4072435316FB0400E /* [CP] Check Pods Manifest.lock */,
+				CC1D753D796E9D8EDE9CB07B /* [CP] Check Pods Manifest.lock */,
 				85196BBB229D0B60003E90D9 /* Sources */,
 				85196BBC229D0B60003E90D9 /* Frameworks */,
 				85196BBD229D0B60003E90D9 /* Resources */,
@@ -225,7 +225,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5D636CD4072435316FB0400E /* [CP] Check Pods Manifest.lock */ = {
+		CC1D753D796E9D8EDE9CB07B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -412,7 +412,7 @@
 		};
 		85196BE1229D0B62003E90D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD29FD70D6D5AC879341C0C8 /* Pods-HYYDaHuaXianTan.debug.xcconfig */;
+			baseConfigurationReference = FA3C319201419ACEC1BFC2BB /* Pods-HYYDaHuaXianTan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -432,7 +432,7 @@
 		};
 		85196BE2229D0B62003E90D9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6078BC421ADAF5AF729526E5 /* Pods-HYYDaHuaXianTan.release.xcconfig */;
+			baseConfigurationReference = 0DE3C9A085023E08FC8E7AA8 /* Pods-HYYDaHuaXianTan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
