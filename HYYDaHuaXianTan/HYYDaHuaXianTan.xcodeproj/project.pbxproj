@@ -15,6 +15,8 @@
 		85196BCF229D0B62003E90D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85196BCD229D0B62003E90D9 /* LaunchScreen.storyboard */; };
 		85196BD2229D0B62003E90D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196BD1229D0B62003E90D9 /* main.m */; };
 		85196BDC229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196BDB229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m */; };
+		85196C11229D12F3003E90D9 /* libHYYBse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85196C10229D12F3003E90D9 /* libHYYBse.a */; };
+		85196C13229D12F6003E90D9 /* libHYYService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85196C12229D12F6003E90D9 /* libHYYService.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		85196BD7229D0B62003E90D9 /* HYYDaHuaXianTanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYYDaHuaXianTanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85196BDB229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYYDaHuaXianTanUITests.m; sourceTree = "<group>"; };
 		85196BDD229D0B62003E90D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85196C10229D12F3003E90D9 /* libHYYBse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHYYBse.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85196C12229D12F6003E90D9 /* libHYYService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHYYService.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3C319201419ACEC1BFC2BB /* Pods-HYYDaHuaXianTan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYDaHuaXianTan.debug.xcconfig"; path = "Target Support Files/Pods-HYYDaHuaXianTan/Pods-HYYDaHuaXianTan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85196C13229D12F6003E90D9 /* libHYYService.a in Frameworks */,
+				85196C11229D12F3003E90D9 /* libHYYBse.a in Frameworks */,
 				69F809D6A694D6D15CEF1B1A /* libPods-HYYDaHuaXianTan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +74,8 @@
 		5B506E11BCDF548AB0B04882 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85196C12229D12F6003E90D9 /* libHYYService.a */,
+				85196C10229D12F3003E90D9 /* libHYYBse.a */,
 				338D564EFAABC0F2861A6C20 /* libPods-HYYDaHuaXianTan.a */,
 			);
 			name = Frameworks;
@@ -124,7 +132,6 @@
 				FA3C319201419ACEC1BFC2BB /* Pods-HYYDaHuaXianTan.debug.xcconfig */,
 				0DE3C9A085023E08FC8E7AA8 /* Pods-HYYDaHuaXianTan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -423,6 +430,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jy.t11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = t11dev;
@@ -442,6 +454,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jy.t11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
