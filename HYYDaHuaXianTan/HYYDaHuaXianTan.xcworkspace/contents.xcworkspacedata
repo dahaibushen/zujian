@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Module/HYYCustom/HYYCustom.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Module/HYYBse/HYYBse.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Module/HYYService/HYYService.xcodeproj">
    </FileRef>
    <FileRef

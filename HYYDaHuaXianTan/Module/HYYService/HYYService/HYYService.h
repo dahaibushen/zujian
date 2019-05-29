@@ -10,5 +10,5 @@
 
 @interface HYYService : NSObject
 +(instancetype)serviceShare;
--(void)postRequestData;
+-(void)postRequestDataWithUrl:(NSString*)url;
 @end

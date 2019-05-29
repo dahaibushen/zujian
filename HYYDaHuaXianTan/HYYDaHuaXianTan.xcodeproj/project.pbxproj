@@ -15,6 +15,8 @@
 		85196BD2229D0B62003E90D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196BD1229D0B62003E90D9 /* main.m */; };
 		85196BDC229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85196BDB229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m */; };
 		85196C19229D2DAF003E90D9 /* libHYYService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85196C18229D2DAF003E90D9 /* libHYYService.a */; };
+		85196C1E229D301B003E90D9 /* libHYYBse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85196C1D229D301B003E90D9 /* libHYYBse.a */; };
+		85196C39229D4294003E90D9 /* HYYCustom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85196C38229D4294003E90D9 /* HYYCustom.framework */; };
 		DF1E2C6153086687F81686E5 /* libPods-HYYDaHuaXianTan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD48454D5F4B2C50214DD74 /* libPods-HYYDaHuaXianTan.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		85196BDB229D0B62003E90D9 /* HYYDaHuaXianTanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYYDaHuaXianTanUITests.m; sourceTree = "<group>"; };
 		85196BDD229D0B62003E90D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85196C18229D2DAF003E90D9 /* libHYYService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHYYService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85196C1D229D301B003E90D9 /* libHYYBse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHYYBse.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85196C38229D4294003E90D9 /* HYYCustom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HYYCustom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD48454D5F4B2C50214DD74 /* libPods-HYYDaHuaXianTan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HYYDaHuaXianTan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD31F764FA8DA36EFCB624E4 /* Pods-HYYDaHuaXianTan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HYYDaHuaXianTan.release.xcconfig"; path = "Target Support Files/Pods-HYYDaHuaXianTan/Pods-HYYDaHuaXianTan.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85196C39229D4294003E90D9 /* HYYCustom.framework in Frameworks */,
+				85196C1E229D301B003E90D9 /* libHYYBse.a in Frameworks */,
 				85196C19229D2DAF003E90D9 /* libHYYService.a in Frameworks */,
 				DF1E2C6153086687F81686E5 /* libPods-HYYDaHuaXianTan.a in Frameworks */,
 			);
@@ -71,6 +77,8 @@
 		8388ED87B6CDA4DBF11BC206 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85196C38229D4294003E90D9 /* HYYCustom.framework */,
+				85196C1D229D301B003E90D9 /* libHYYBse.a */,
 				85196C18229D2DAF003E90D9 /* libHYYService.a */,
 				9FD48454D5F4B2C50214DD74 /* libPods-HYYDaHuaXianTan.a */,
 			);
@@ -356,6 +364,10 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -408,6 +420,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -425,6 +441,20 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jy.t11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +475,20 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jy.t11;
 				PRODUCT_NAME = "$(TARGET_NAME)";

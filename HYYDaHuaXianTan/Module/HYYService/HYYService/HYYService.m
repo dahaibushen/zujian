@@ -27,14 +27,14 @@
     return service;
 }
 
--(void)postRequestData{
+-(void)postRequestDataWithUrl:(NSString*)url{
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
     NSString *sheme = @"https://api-dev.myt11.com";
-    NSString *url = @"/jy-shop/IShopRpcService/findShops";
+    NSString *urlString = url;// @"/jy-shop/IShopRpcService/findShops";
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-    NSString *requestUrl = [NSString stringWithFormat:@"%@/%@",sheme,url];
+    NSString *requestUrl = [NSString stringWithFormat:@"%@/%@",sheme,urlString];
     
     [manager POST:requestUrl parameters:dict success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"====succed===:%@",responseObject);
